@@ -1,0 +1,1 @@
+.burger{position:relative;left:0;top:0;display:-webkit-box;display:-ms-flexbox;display:flex;width:200px;height:100px;border:1px solid red;-webkit-transition:0.4s;transition:0.4s}.burger__ul{text-decoration:none;list-style-type:none}.burger_active{position:relative;left:-250px}

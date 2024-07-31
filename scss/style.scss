@@ -1,0 +1,19 @@
+.burger{
+    position: relative;
+    left: 0;
+    top: 0;
+    display: flex;
+    width: 200px;
+    height: 100px;
+    border: 1px solid red;
+    transition: 0.4s;
+    &__ul{
+        text-decoration: none;
+        list-style-type: none;
+    }
+    
+}
+.burger_active{
+    position: relative;
+    left: -250px;
+}

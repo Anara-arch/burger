@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="div">
+        <a href="#" id="a">Показать</a>
+        <div class="burger">
+            <ul class="burger__ul">
+                <li class="burger__ul_li">Главная</li>
+                <li class="burger__ul_li">Меню</li>
+                <li class="burger__ul_li">Контакты</li>
+            </ul>
+        </div>
+        <input type="password" id="password-input" placeholder="Введите пароль">
+        <a href="#" class="password-control">Показать пароль</a>
+    </div>
+    
+
+
+    <script src="./libs/jguery/jquery-3.6.3.min.js"></script>
+    <script>
+        $(".div").on("click", "#a", function(){
+            $(".burger").toggleClass("burger_active");
+        })
+    </script>
+    <script>
+        $(".div").on("click", ".password-control", function(){
+            if($("#password-input").attr("type") =="password"){
+                $(this).html("Скрыть пароль");
+                $("#password-input").attr("type","text");
+            }else{
+                $(this).html("Показать пароль");
+                $("#password-input").attr("type","password");
+            }
+        })
+    </script>
+</body>
+</html>
